@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="step2.css">
+    <title>Multi Step Form</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="image">
+        <img src="images/img3.png" id="image3" class="image3">
+        <img src="images/img4.png" id="image4" class="image3">
+    </div>
+    <div class="left-panel"></div>
+
+    <div class="right-panel">
+        <div class="steps-nav">
+            <div class="step">1 <span>Sign Up</span></div>
+            <div class="step active">2 <span>Message</span></div>
+            <div class="step">3 <span>Checkbox</span></div>
+            <div class="step">4 <span>Analyse</span></div>
+
+        </div>
+
+        <p class="step-count">Step 2/4</p>
+        <h1 class="title">Write your message</h1>
+
+        <div class="message">
+            <textarea class="textarea" placeholder="Write your message...." id="message"></textarea>
+        </div>
+
+        <div class="result"></div>
+
+        <a href="step3.html">
+        <button class="next-btn" id="nextbtn3">Next Step</button></a>
+    </div>
+
+</div>
+<script src="step2.js"></script>
+<script src="step4.js"></script>
+
+</body>
+</html>

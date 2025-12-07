@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    background: #ffffff;
+}
+.image img{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    margin-top: 5%;
+    margin-left: -10%;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+#image2{
+    display: none;
+}
+.left-panel {
+    flex: 1.1;
+    background-image: url('images/background.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-panel img {
+    width: 90%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.right-panel {
+    flex: 1.4;
+    padding: 60px;
+}
+
+.steps-nav {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.step {
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: #f4f4f4;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step.active {
+    background: #ebf0ff;
+    color: #2563ff;
+}
+
+.step span {
+    color: #555;
+    font-weight: 500;
+}
+
+.step-count {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input {
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 15px;
+    outline: none;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #2563ff;
+}
+
+
+.next-btn {
+    margin-top: 40px;
+    background: #2563ff;
+    border: none;
+    padding: 14px 30px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.next-btn:hover {
+    background: #1746c7;
+}
+/* firstname */
+#name.error{
+    border-color: red;
+    background-color: #ffecec;
+    height: 68px;
+}
+.error1{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 18px;
+}
+#nextbtn2:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* lastname */
+#lastname.error2{
+    border-color: red;
+    background-color: #ffecec;
+    height: 68px;
+}
+.error2{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    height: 18px;
+}
+#name.shake{
+    animation: shake 2s ease;
+}
+@keyframes shake {
+    0%{transform: translateX(0);}
+    20%{transform: translateX(-5px);}
+    40%{transform: translateX(5px);}
+    60%{transform: translateX(-5px);}
+    80%{transform: translateX(5px);}
+    100%{transform: translateX(0);}
+}
+#lastname.shake1{
+    animation: shake1 2s ease;
+}
+@keyframes shake1 {
+    0%{transform: translateX(0);}
+    20%{transform: translateX(-5px);}
+    40%{transform: translateX(5px);}
+    60%{transform: translateX(-5px);}
+    80%{transform: translateX(5px);}
+    100%{transform: translateX(0);}
+}
+.shake{
+    animation: shakeimage 0.6s ease-in-out;
+}
+@keyframes shakeimage {
+    0%{transform: translateX(0);}
+    20%{transform: translateX(-20px);}
+    40%{transform: translateX(20px);}
+    60%{transform: translateX(-20px);}
+    80%{transform: translateX(20px);}
+    100%{transform: translateX(0);}
+}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        height: 300px;
+    }
+
+    .right-panel {
+        padding: 30px;
+    }
+
+    .next-btn {
+        width: 100%;
+        float: none;
+    }
+}

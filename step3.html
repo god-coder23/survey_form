@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="step2.css">
+    <title>Multi Step Form</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-panel"></div>
+
+    <div class="right-panel">
+        <div class="steps-nav">
+            <div class="step">1 <span>Sign Up</span></div>
+            <div class="step">2 <span>Message</span></div>
+            <div class="step active">3 <span>Checkbox</span></div>
+            <div class="step">4 <span>Analyse</span></div>
+
+        </div>
+
+        <p class="step-count">Step 3/4</p>
+        <h1 class="title">Checkbox</h1>
+
+        <div class="checkbox">
+            <label>Select your message type</label><br>
+            <select class="options" id="options">
+                <option selected disabled>Select the option</option>
+                <option>Asking for help</option>
+                <option>Reporting a bug</option>
+                <option>Business inquiry</option>
+                <option>Requesting information</option>
+                <option>Feedback</option>
+                <option>Complaint</option>
+                <option>Feature request</option>
+                <option>Contact follow-up</option>
+                <option>Order-related issues</option>
+                <option>Others</option>
+            </select>
+        </div>
+
+        <a href="step4.html">
+        <button class="next-btn" id="nextbtn">Submit</button></a>
+    </div>
+
+</div>
+<script src="step4.js"></script>
+</body>
+</html>
