@@ -55,7 +55,6 @@ nameinput.addEventListener("input",check);
 let lastname = document.querySelector("#lastname");
 let error2 = document.querySelector(".error2");
 let btn2 = document.querySelector("#nextbtn2");
-btn2.disabled = true;
 function check2(){
     let name = lastname.value.trim();
     if (name==""){

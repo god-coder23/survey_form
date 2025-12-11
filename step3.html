@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="step2.css">
+    <link rel="stylesheet" href="step3.css">
     <title>Multi Step Form</title>
 </head>
 <body>
 
 <div class="container">
+    <div id="step4page"></div>
+    <div class="imgstep3">
+        <img src="images/img5.png" class="image5" id="image5">
+        <img src="images/img6.png" class="image5" id="image6">
+
+    </div>
 
     <div class="left-panel"></div>
 
@@ -25,7 +31,7 @@
         <h1 class="title">Checkbox</h1>
 
         <div class="checkbox">
-            <label>Select your message type</label><br>
+            <label>Select your message type</label><br><br>
             <select class="options" id="options">
                 <option selected disabled>Select the option</option>
                 <option>Asking for help</option>
@@ -41,11 +47,11 @@
             </select>
         </div>
 
-        <a href="step4.html">
-        <button class="next-btn" id="nextbtn">Submit</button></a>
+        <button class="next-btn" id="nextbtn5" disabled>Submit</button>
     </div>
 
 </div>
+<script src="step3.js"></script>
 <script src="step4.js"></script>
 </body>
 </html>
